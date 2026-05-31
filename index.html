@@ -76,7 +76,7 @@
     <h1>Hi, I'm Hao</h1>
     <p class="tagline">my summer progress</p>
   </header>
-
+  <button id="surpriseBtn">Click me</button>
   <main>
     <section>
       <h2>About me</h2>
@@ -102,5 +102,11 @@
   <footer>
     <p>Built as my first coding project · Summer 2026</p>
   </footer>
+  <script>
+      document.querySelector("#surpriseBtn").addEventListener("click", surpriseBtn);
+      function surpriseBtn() {
+        document.querySelector("h1").textContent = "Surprise!";
+      }
+  </script>
 </body>
 </html>
