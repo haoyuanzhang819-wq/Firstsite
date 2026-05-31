@@ -55,6 +55,19 @@
       color: #0f3460;
     }
 
+    .link-row {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .link-row a {
+  padding: 0.5rem 1rem;
+  background-color: #8cb4e5;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  color: #0f3460;
+}
+
     ul {
       margin: 0;
       padding-left: 1.25rem;
@@ -75,9 +88,20 @@
   <header>
     <h1>Hi, I'm Hao</h1>
     <p class="tagline">my summer progress</p>
+    <button id="surpriseBtn">Click me</button>
   </header>
-  <button id="surpriseBtn">Click me</button>
+
   <main>
+
+    <section id="links">
+      <h2>My links</h2>
+      <div class="link-row">
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+        <a href="#">Email</a>
+      </div>
+    </section>
+
     <section>
       <h2>About me</h2>
       <p>
