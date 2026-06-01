@@ -105,6 +105,8 @@
     <p id="counter">0</p>
     <button id="countBtn">Add 1</button>
 
+    <button id="resetBtn">Reset</button>
+
     <section>
       <h2>About me</h2>
       <p>
@@ -142,9 +144,17 @@
         document.querySelector("#counter").textContent = count;
         if (count >= 5){
           document.querySelector("#counter").style.color = "red";
+        } else{
+          document.querySelector("#counter").style.color = "black";
         }
       }
 
+      document.querySelector("#resetBtn").addEventListener("click", reset);
+      function reset(){
+        count = 0
+        document.querySelector("#counter").textContent = count;
+        document.querySelector("#counter").style.color = "black";
+      }
 
 
 
