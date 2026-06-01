@@ -102,6 +102,9 @@
       </div>
     </section>
 
+    <p id="counter">0</p>
+    <button id="countBtn">Add 1</button>
+
     <section>
       <h2>About me</h2>
       <p>
@@ -131,6 +134,20 @@
       function surpriseBtn() {
         document.querySelector("h1").textContent = "Surprise!";
       }
+
+      let count = 0
+      document.querySelector("#countBtn").addEventListener("click", increment);
+      function increment(){
+        count += 1
+        document.querySelector("#counter").textContent = count;
+        if (count >= 5){
+          document.querySelector("#counter").style.color = "red";
+        }
+      }
+
+
+
+
   </script>
 </body>
 </html>
